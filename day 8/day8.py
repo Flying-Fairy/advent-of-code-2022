@@ -7,7 +7,6 @@ visible_trees = 0
 
 def check_visible(ls, tree_pos, tree_height, direction):
     x, y = tree_pos
-    is_visible = False
     tree_score = {
         "up":0,
         "down": 0,
@@ -21,12 +20,11 @@ def check_visible(ls, tree_pos, tree_height, direction):
             current = ls[x][y]
             if tree_height > current:
                 tree_score["up"] += 1
-                is_visible = True
             else:
                 tree_score["up"] += 1
                 return False, tree_score["up"]
         
-        return is_visible, tree_score["up"]
+        return True, tree_score["up"]
 
     elif direction == "down":
         while x < len(ls) - 1:
@@ -34,12 +32,11 @@ def check_visible(ls, tree_pos, tree_height, direction):
             current = ls[x][y]
             if tree_height > current:
                 tree_score["down"] += 1
-                is_visible = True
             else:
                 tree_score["down"] += 1
                 return False, tree_score["down"]
         
-        return is_visible, tree_score["down"]
+        return True, tree_score["down"]
     
     elif direction == "left":
         while y > 0:
@@ -47,12 +44,11 @@ def check_visible(ls, tree_pos, tree_height, direction):
             current = ls[x][y]
             if tree_height > current:
                 tree_score["left"] += 1
-                is_visible = True
             else:
                 tree_score["left"] += 1
                 return False, tree_score["left"]
         
-        return is_visible, tree_score["left"]
+        return True, tree_score["left"]
 
     elif direction == "right":
         while y < len(ls[x]) - 1:
@@ -60,12 +56,11 @@ def check_visible(ls, tree_pos, tree_height, direction):
             current = ls[x][y]
             if tree_height > current:
                 tree_score["right"] += 1
-                is_visible = True
             else:
                 tree_score["right"] += 1
                 return False, tree_score["right"]
         
-        return is_visible, tree_score["right"]
+        return True, tree_score["right"]
     
 scenic_scores = []
 
