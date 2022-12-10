@@ -23,8 +23,7 @@ with open("day 10/input.txt") as f:
             cycle_number += 1
             
             if current_index in pixel_pos:
-                if cycle_number <= crt_lines[row]:
-                    crt_screen[row][current_index] = "#"
+                crt_screen[row][current_index] = "#"
                 
             if cycle_number == crt_lines[row]:
                 current_index = 0
