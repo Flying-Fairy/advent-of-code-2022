@@ -1,3 +1,5 @@
+import math
+
 monkey_data = []
 ROUNDS = 10000  # 20 for part 1
 
@@ -62,9 +64,7 @@ for data in monkey_data:
     
     monkeys.append(Monkey(starting_items, operation, divisible_by, target_monkey))
 
-lcm = 1
-for monkey in monkeys:
-    lcm *= monkey.divisible_by
+lcm = math.lcm(*[i.divisible_by for i in monkeys])
 
 for _ in range(ROUNDS):
     for monkey in monkeys:
