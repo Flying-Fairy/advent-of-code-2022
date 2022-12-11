@@ -1,7 +1,7 @@
 from string import ascii_letters
 from collections import Counter
 
-with open("day 3/input.txt", 'r') as f:
+with open("inputs/input3.txt", 'r') as f:
     bags = []
     for content in f:
         bags.append(content.replace("\n", ""))

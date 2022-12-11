@@ -1,4 +1,4 @@
-with open("day 6/input.txt") as f:
+with open("inputs/input6.txt") as f:
     signal = f.read()
     SIGNAL_LENGTH = 14  # 4 for part 1
     

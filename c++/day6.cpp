@@ -8,7 +8,7 @@ int main() {
     std::fstream myFile;
     const int signalLength = 14;
 
-    myFile.open("input.txt", std::ios::in);
+    myFile.open("../inputs/input6.txt", std::ios::in);
     std::string line;
     
     while (std::getline(myFile, line)) {

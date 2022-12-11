@@ -38,7 +38,7 @@ class Monkey:
                     monkeys[self.throw_target[1]].inventory.append(worry_level)
 
 
-with open("day 11/input.txt") as f:
+with open("inputs/input11.txt") as f:
     data = []
     for line in f.readlines():
         if line == "\n":

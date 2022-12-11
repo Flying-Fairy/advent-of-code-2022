@@ -13,7 +13,7 @@ crt_lines = [40, 80, 120, 160, 200, 240]
 row = 0
 current_index = 0
 
-with open("day 10/input.txt") as f:
+with open("inputs/input10.txt") as f:
     for line in f.readlines():
         line = line.split()
         

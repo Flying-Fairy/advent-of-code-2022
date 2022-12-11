@@ -13,7 +13,7 @@ direction_dict = {"U": (1, 0),
                   "R": (0, 1),
                   "L": (0, -1)}
 
-with open("day 9/input.txt") as f:
+with open("inputs/input9.txt") as f:
     for line in f.readlines():
         direction, distance = line.split()[0], int(line.split()[1])
         direction_x, direction_y = direction_dict[direction]
@@ -30,7 +30,7 @@ with open("day 9/input.txt") as f:
                 
 print(len(traversed_pos))
 
-with open("day 9/input.txt") as f:
+with open("inputs/input9.txt") as f:
     for line in f.readlines():
         direction, distance = line.split()[0], int(line.split()[1])
         direction_x, direction_y = direction_dict[direction]

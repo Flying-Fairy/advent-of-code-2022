@@ -29,7 +29,7 @@ int main() {
     int totalScore = 0;
     int totalScore2 = 0;
 
-    myFile.open("input.txt", std::ios::in);
+    myFile.open("../inputs/input2.txt", std::ios::in);
     if (myFile.is_open()) {
         std::string line;
         while (std::getline(myFile, line)) {

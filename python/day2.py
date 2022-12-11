@@ -1,4 +1,4 @@
-with open("day 2\input.txt", 'r') as f:
+with open("inputs\input2.txt", 'r') as f:
     rps = []
     for line in f:
         rps.append(f"{line[0]} {line[2]}")

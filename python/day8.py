@@ -1,4 +1,4 @@
-with open("day 8/input.txt") as f:
+with open("inputs/input8.txt") as f:
     tree_patch = []
     for line in f.readlines():
         tree_patch.append(list(line.strip()))

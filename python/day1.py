@@ -1,4 +1,4 @@
-with open("day 1\input.txt", "r") as f:
+with open("inputs\input1.txt", "r") as f:
     calories = f.readlines()
 
 total_cal = []

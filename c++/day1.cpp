@@ -10,7 +10,7 @@ int main()
     std::vector<int> allResults;
     int calCount = 0;
 
-    myFile.open("input.txt", std::ios::in);
+    myFile.open("../inputs/input1.txt", std::ios::in);
     if (myFile.is_open()) {
         std::string line;
         while (std::getline(myFile, line)) {

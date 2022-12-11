@@ -1,7 +1,7 @@
 pairs_countained = 0
 pairs_overlap = 0
 
-with open("day 4/input.txt") as f:
+with open("inputs/input4.txt") as f:
     for line in f.readlines():
         pair1, pair2 = line.split(',')
         

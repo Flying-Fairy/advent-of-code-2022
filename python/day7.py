@@ -1,4 +1,4 @@
-with open("day 7/input.txt") as f:
+with open("inputs/input7.txt") as f:
     dir_stack = []
     dir_sizes = {}
     

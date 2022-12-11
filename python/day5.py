@@ -1,4 +1,4 @@
-with open("day 5/input.txt") as f:
+with open("inputs/input5.txt") as f:
     cargos = []
     cargos_list = [[] for i in range(9)]
     
