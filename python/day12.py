@@ -58,5 +58,5 @@ def find_shortest_path(start, heightmap):
         
         visited.add(pos)
             
-print(find_shortest_path(start, heightmap))  # part 1
-print(find_shortest_path(possible_start, heightmap))  # part 2
+print(find_shortest_path(start, heightmap))  # part 1.
+print(find_shortest_path(possible_start, heightmap))  # part 2.
