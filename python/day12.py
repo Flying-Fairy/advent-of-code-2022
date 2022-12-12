@@ -5,14 +5,15 @@ with open("inputs/input12.txt") as f:
         heightmap.append(list(line.strip()))
 
 possible_start = []
-start = None
+start = []
 
 for r_index, row in enumerate(heightmap):
     for c_index, col in enumerate(row):
         if c_index == 0:
-            possible_start.append((r_index, c_index))
+            possible_start.append(((r_index, c_index), 0))
         if col == "S":
-            start = (r_index, c_index)
+            start.append(((r_index, c_index), 0))
+
 
 def get_neighbors(pos, heightmap):
     x, y = pos
@@ -30,7 +31,7 @@ def get_neighbors(pos, heightmap):
     return neighbors
 
 def find_shortest_path(start, heightmap):
-    queue = [(start, 0)]
+    queue = start
     visited = set()
 
     while queue:
@@ -58,9 +59,4 @@ def find_shortest_path(start, heightmap):
         visited.add(pos)
             
 print(find_shortest_path(start, heightmap))  # part 1
-
-distance_list = []
-for pos in possible_start:
-    distance_list.append(find_shortest_path(pos, heightmap))
-
-print(min(distance_list))  # part 2
+print(find_shortest_path(possible_start, heightmap))  # part 2
